@@ -23,6 +23,8 @@ de rolagem pode fazer uso do conhecimento prévio da extensão dos filhos para e
 
 -[Dart](https://dart.dev/guides) 
 
+-[Getx](https://chornthorn.github.io/getx-docs/)
+
 -[Flutter](https://docs.flutter.dev/)
 
 ## Baixar e visualizar o Projeto 
