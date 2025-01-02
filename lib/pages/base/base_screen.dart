@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:imperio_das_frutas/pages/cart/cart_tab.dart';
+import 'package:imperio_das_frutas/pages/orders/orders_tab.dart';
+import 'package:imperio_das_frutas/pages/profile/profile_tab.dart';
 import '../home/home_tab.dart';
 
 // ignore: must_be_immutable
@@ -20,15 +23,9 @@ class _BasescreenState extends State<Basescreen> {
         physics: const NeverScrollableScrollPhysics(),
         children: [
           const HomeTab(),
-          Container(
-            color: Colors.yellow,
-          ),
-          Container(
-            color: Colors.purple,
-          ),
-          Container(
-            color: Colors.orange,
-          ),
+          CartTab(),
+          OrdersTab(),
+          ProfileTab(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(

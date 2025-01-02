@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 Map<int, Color> _swatchOpacity = {
 
   50: const Color.fromARGB(255, 247, 70,1, ),
-  100: const Color.fromARGB(255, 247, 70, 2),
+  100: const Color.fromARGB(255, 230, 222, 218),
   200: const Color.fromARGB(255, 247, 70, 3),
   300: const Color.fromARGB(255, 247, 70, 4),
   400: const Color.fromARGB(255, 247, 70, 5),

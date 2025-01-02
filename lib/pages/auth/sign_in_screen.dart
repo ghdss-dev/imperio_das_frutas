@@ -6,7 +6,7 @@ import 'package:imperio_das_frutas/pages/auth/sign_up_screen.dart';
 import '../../config/custom_colors.dart';
 import '../base/base_screen.dart';
 
-import 'components/customtextfield.dart';
+import '../common_widgets/custom_text_field.dart';
 
 class SignInscreen extends StatelessWidget {
   const SignInscreen({super.key});
@@ -32,7 +32,7 @@ class SignInscreen extends StatelessWidget {
                       ),
                       children: [
                         TextSpan(
-                            text: 'Império',
+                            text: 'Império ',
                             style: TextStyle(color: Colors.white)),
                         TextSpan(
                             text: 'Das Frutas',

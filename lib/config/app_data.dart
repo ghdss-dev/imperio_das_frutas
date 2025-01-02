@@ -1,3 +1,7 @@
+import 'package:imperio_das_frutas/models/cart_item_model.dart';
+import 'package:imperio_das_frutas/models/order_model.dart';
+import 'package:imperio_das_frutas/models/user_model.dart';
+
 import '../models/item_model.dart';
 
 ItemModel apple = ItemModel(
@@ -67,13 +71,59 @@ List<ItemModel> items = [
 ];
 
 final List<String> categories = [
-    'executivos',
-    'bebidas',
-    'sobremessas',
-    'promo da semana',
-    'Entradas e petiscos',
-    'pratos kid/individual',
-    'fit',
-    'acompanhamentos',
-    'frutas',
+    'Frutas',
+    'Grãos',
+    'Verduras',
+    'Temperos',
+    'Cereais'
+];
+
+List<CartItemModel> cartItems = [
+
+    CartItemModel(
+        item: apple,
+        quantity: 1
+    ),
+
+    CartItemModel(
+        item: mango,
+        quantity: 1
+    ),
+
+    CartItemModel(
+        item: guava,
+        quantity: 3
+    )
+];
+
+UserModel user = UserModel(
+
+    phone: '99 9 9999-9999',
+    cpf: '999.999.999-99',
+    email: 'gustavotinho@hotmail.com',
+    name: 'Gustavo Henrique',
+    password: '',
+);
+
+List<OrderModel> orders = [
+
+    OrderModel(
+        copyAndPaste: 'q1w2e3r4t5y6',
+        createdDateTime: DateTime.parse(
+            '2021-06-08 10:00:10.458',
+        ),
+        overdueDateTime: DateTime.parse(
+            '2021-06-08 11:00:10.458',
+        ),
+
+        id: 'asd6a54da6s2d1',
+        status: 'pending_payment',
+        total: 11.0,
+        items: [
+            CartItemModel(
+                item: apple,
+                quantity: 2,
+            ),
+        ],
+    ),
 ];
