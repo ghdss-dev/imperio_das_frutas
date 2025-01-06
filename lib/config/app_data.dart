@@ -5,6 +5,7 @@ import 'package:imperio_das_frutas/models/user_model.dart';
 import '../models/item_model.dart';
 
 ItemModel apple = ItemModel(
+
     description:
     'A melhor maçã da região e que conta com o melhor preço de qualquer quitanda. Este item conta com vitaminas essenciais para o fortalecimento corporal, resultando em uma vida saudável.',
     imgUrl: 'assets/fruits/apple.png',
@@ -12,8 +13,6 @@ ItemModel apple = ItemModel(
     price: 5.5,
     unit: 'kg',
 );
-
-
 
 ItemModel grape = ItemModel(
     imgUrl: 'assets/fruits/grape.png',
@@ -110,7 +109,7 @@ List<OrderModel> orders = [
     OrderModel(
         copyAndPaste: 'q1w2e3r4t5y6',
         createdDateTime: DateTime.parse(
-            '2021-06-08 10:00:10.458',
+            '2025-01-08 10:00:10.458',
         ),
         overdueDateTime: DateTime.parse(
             '2021-06-08 11:00:10.458',
@@ -124,6 +123,38 @@ List<OrderModel> orders = [
                 item: apple,
                 quantity: 2,
             ),
+
+            CartItemModel(
+                item: guava,
+                quantity: 2,
+            ),
+        ],
+    ),
+
+    OrderModel(
+        copyAndPaste: 'q1w2e3r4t5y6',
+        createdDateTime: DateTime.parse(
+            '2025-01-01 10:00:10.458',
+        ),
+        overdueDateTime: DateTime.parse(
+            '2025-01-01 11:00:10.458',
+        ),
+
+        id: 'asd6a54da6s2d1',
+        status: 'shipping',
+        total: 12.0,
+        items: [
+            CartItemModel(
+                item: apple,
+                quantity: 2,
+            ),
+
+            CartItemModel(
+                item: mango,
+                quantity: 3,
+            ),
         ],
     ),
 ];
+
+

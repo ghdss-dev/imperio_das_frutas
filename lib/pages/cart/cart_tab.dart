@@ -5,6 +5,8 @@ import 'package:imperio_das_frutas/pages/cart/components/cart_tile.dart';
 import 'package:imperio_das_frutas/services/utils_services.dart';
 import 'package:imperio_das_frutas/config/app_data.dart' as appData;
 
+import '../common_widgets/payment_dialog.dart';
+
 class CartTab extends StatefulWidget {
   CartTab({super.key});
 
@@ -103,7 +105,17 @@ class _CartTabState extends State<CartTab> {
                     ),
                     onPressed: () async {
                       bool? result = await showOrderConfirmation();
-                      print(result);
+
+                      if (result ?? false) {
+                        showDialog(
+                            context: context,
+                            builder: (_) {
+                              return PaymentDialog(
+                                order: appData.orders.first,
+                              );
+                            }
+                        );
+                      }
                     },
                     child: Text(
                         'Concluir pedido',
