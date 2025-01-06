@@ -3,8 +3,11 @@
 O Aplicativo Ímperio das Frutas é uma solução prática e moderna para os clientes do mercado localizado no bairro do Cordeiro, em Recife. Ele foi projetado para oferecer uma experiência de compra conveniente, com recursos que incluem:
 
 Catálogo de Produtos: Visualize a variedade de frutas, legumes, verduras, e produtos naturais disponíveis no mercado, com descrições e preços atualizados.
+
 Compras Online: Faça suas compras diretamente pelo app e receba os produtos em casa ou agende a retirada na loja.
+
 Promoções Exclusivas: Acompanhe promoções e ofertas especiais disponíveis apenas para usuários do aplicativo.
+
 Lista de Favoritos: Crie uma lista personalizada com os produtos que você mais gosta ou compra frequentemente.
 
 Com uma interface amigável e intuitiva, o Aplicativo Ímperio das Frutas torna o dia a dia dos clientes mais prático, conectando-os a produtos frescos e de qualidade diretamente do conforto de suas casas.
